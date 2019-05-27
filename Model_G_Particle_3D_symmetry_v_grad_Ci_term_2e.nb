@@ -136,9 +136,9 @@ Simplify[eqs13 == eqs7 /. {ddt G -> ddt pG,
    laplacian Y -> laplacian pY, grad Y -> grad pY, G -> pG + G0, 
    X -> pX + X0, Y -> pY + Y0}]
 
-(*BJD changed eqs17: v \[Rule] {0,0,0} to v \[Rule] {0.5,0,0} --- \
+(*BJD changed eqs17: v -> {0,0,0} to v -> {0.5,0,0} --- \
 test! 27.5.2019*)
-(*what about v \[Rule] 1 -- doesn't work *)
+(*what about v -> 1 -- doesn't work *)
 
 eqs17 = {a -> 14, b -> 29, dx -> 1, dy -> 12, p -> 1, q -> 1, 
    g -> 1/10, s -> 0, u -> 0, v -> {0.5, 0, 0}, w -> 0};
